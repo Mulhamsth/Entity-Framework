@@ -32,13 +32,23 @@ namespace EntityFramework
             };
             return authors;
         }
+        static IEnumerable<User> UserData()
+        {
+            var users = new List<User>
+            {
+                new User{Id = 1},
+                new User{Id = 2},
+                new User{Id = 3}
+            };
+            return users;
+        }
         static IEnumerable<MessagesBT> MessagesData()
         {
             var messages = new List<MessagesBT>
             {
                 new MessagesBT{Id = 1, Text = "This is a test message" },
                 new GlobalMessages{Id = 2, Text = "This should be a Global message"},
-                new DirectMessages{Id = 3, Text = "This should be a Direct message"}
+                new DirectMessages{Id = 3, Text = "This should be a Direct message", UserId = 2}
             };
             return messages;
         }
@@ -53,8 +63,14 @@ namespace EntityFramework
             db.Database.EnsureCreated();
 
             var messages = MessagesData();
+            var users = UserData();
+            db.AddRange(users);
             db.AddRange(messages);
             db.SaveChanges();
+
+            //var options = new DbContextOptionsBuilder<BookContext>()
+            //    .UseSqlite("Filename=../../../MyLocalLibrary.db")
+            //    .Options;
 
             //using var db = new BookContext(options);
 

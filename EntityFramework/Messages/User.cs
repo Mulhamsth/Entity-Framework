@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Messages
 {
-    public class DirectMessages : MessagesBT
+    public class User
     {
-        public int UserId { get; set; }
-        public User User { get; set; }
+        public int Id { get; set; }
     }
 }
