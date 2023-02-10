@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{DFA7700B-E495-471D-A502-766565108790}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{DFA7700B-E495-471D-A502-766565108790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibrary", "BookLibrary\BookLibrary.csproj", "{0E50241D-15F7-450F-910E-5239E44B6391}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookLibrary", "BookLibrary\BookLibrary.csproj", "{0E50241D-15F7-450F-910E-5239E44B6391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{A13EF567-AD7B-47F1-90D6-F6708398D0F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0E50241D-15F7-450F-910E-5239E44B6391}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E50241D-15F7-450F-910E-5239E44B6391}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E50241D-15F7-450F-910E-5239E44B6391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13EF567-AD7B-47F1-90D6-F6708398D0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13EF567-AD7B-47F1-90D6-F6708398D0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13EF567-AD7B-47F1-90D6-F6708398D0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13EF567-AD7B-47F1-90D6-F6708398D0F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

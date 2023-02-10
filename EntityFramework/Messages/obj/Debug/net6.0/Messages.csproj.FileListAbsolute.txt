@@ -1,0 +1,12 @@
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\bin\Debug\net6.0\Messages.deps.json
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\bin\Debug\net6.0\Messages.dll
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\bin\Debug\net6.0\Messages.pdb
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\Messages.csproj.AssemblyReference.cache
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\Messages.AssemblyInfoInputs.cache
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\Messages.AssemblyInfo.cs
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\Messages.csproj.CoreCompileInputs.cache
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\Messages.dll
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\refint\Messages.dll
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\Messages.pdb
+C:\Users\Mulhamsth\github\Entity-Framework\EntityFramework\Messages\obj\Debug\net6.0\ref\Messages.dll

@@ -1,4 +1,5 @@
 ﻿using BookLibrary;
+using Messages;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
@@ -31,27 +32,45 @@ namespace EntityFramework
             };
             return authors;
         }
+        static IEnumerable<MessagesBT> MessagesData()
+        {
+            var messages = new List<MessagesBT>
+            {
+                new MessagesBT{Id = 1, Text = "This is a test message" },
+                new GlobalMessages{Id = 2, Text = "This should be a Global message"},
+                new DirectMessages{Id = 3, Text = "This should be a Direct message"}
+            };
+            return messages;
+        }
         static void Main(string[] args)
         {
-            var options = new DbContextOptionsBuilder<BookContext>()
-                .UseSqlite("Filename=../../../MyLocalLibrary.db")
+            var options = new DbContextOptionsBuilder<MessageContext>()
+                .UseSqlite("Filename=../../../MessagesDB.db")
                 .Options;
 
-            using var db = new BookContext(options);
-
+            using var db = new MessageContext(options);
+            db.Database.EnsureDeleted();
             db.Database.EnsureCreated();
 
-            //var authors = CreateFakeData();
+            var messages = MessagesData();
+            db.AddRange(messages);
+            db.SaveChanges();
 
-            //db.AddRange(authors);
-            //db.SaveChanges();
+            //using var db = new BookContext(options);
 
-            var recentBooks = from b in db.Books where b.YearOfPublication > 1900 select b;
+            //db.Database.EnsureCreated();
 
-            foreach (var book in recentBooks.Include(b => b.Author))
-            {
-                Console.WriteLine($"{book} is by {book.Author}");
-            }
+            ////var authors = CreateFakeData();
+
+            ////db.AddRange(authors);
+            ////db.SaveChanges();
+
+            //var recentBooks = from b in db.Books where b.YearOfPublication > 1900 select b;
+
+            //foreach (var book in recentBooks.Include(b => b.Author))
+            //{
+            //    Console.WriteLine($"{book} is by {book.Author}");
+            //}
         }
     }
 }
