@@ -54,39 +54,40 @@ namespace EntityFramework
         }
         static void Main(string[] args)
         {
-            //var options = new DbContextOptionsBuilder<MessageContext>()
-            //    .UseSqlite("Filename=../../../MessagesDB.db")
-            //    .Options;
-
-            //using var db = new MessageContext(options);
-            //db.Database.EnsureDeleted();
-            //db.Database.EnsureCreated();
-
-            //var messages = MessagesData();
-            //var users = UserData();
-            //db.AddRange(users);
-            //db.AddRange(messages);
-            //db.SaveChanges();
-
-            var options = new DbContextOptionsBuilder<BookContext>()
-                .UseSqlite("Filename=../../../MyLocalLibrary.db")
+            var options = new DbContextOptionsBuilder<MessageContext>()
+                .UseSqlite("Filename=../../../MessagesDB.db")
                 .Options;
 
-            using var db = new BookContext(options);
-
+            using var db = new MessageContext(options);
+            db.Database.EnsureDeleted();
             db.Database.EnsureCreated();
 
-            //var authors = CreateFakeData();
+            var messages = MessagesData();
+            var users = UserData();
+            db.AddRange(users);
+            db.AddRange(messages);
+            db.SaveChanges();
 
-            //db.AddRange(authors);
-            //db.SaveChanges();
 
-            var recentBooks = from b in db.Books where b.YearOfPublication > 1900 select b;
+            //var options = new DbContextOptionsBuilder<BookContext>()
+            //    .UseSqlite("Filename=../../../MyLocalLibrary.db")
+            //    .Options;
 
-            foreach (var book in recentBooks.Include(b => b.Author))
-            {
-                Console.WriteLine($"{book} is by {book.Author}");
-            }
+            //using var db = new BookContext(options);
+
+            //db.Database.EnsureCreated();
+
+            ////var authors = CreateFakeData();
+
+            ////db.AddRange(authors);
+            ////db.SaveChanges();
+
+            //var recentBooks = from b in db.Books where b.YearOfPublication > 1900 select b;
+
+            //foreach (var book in recentBooks.Include(b => b.Author))
+            //{
+            //    Console.WriteLine($"{book} is by {book.Author}");
+            //}
         }
     }
 }

@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "EFWeb/1.0.0": {
         "dependencies": {
-          "BookLibrary": "1.0.0",
-          "EntityFramework": "1.0.0"
+          "BookLibrary": "1.0.0"
         },
         "runtime": {
           "EFWeb.dll": {}
@@ -385,25 +384,6 @@
         "runtime": {
           "BookLibrary.dll": {}
         }
-      },
-      "EntityFramework/1.0.0": {
-        "dependencies": {
-          "BookLibrary": "1.0.0",
-          "Messages": "1.0.0"
-        },
-        "runtime": {
-          "EntityFramework.dll": {}
-        }
-      },
-      "Messages/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "7.0.2"
-        },
-        "runtime": {
-          "Messages.dll": {}
-        }
       }
     }
   },
@@ -589,16 +569,6 @@
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
     "BookLibrary/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "EntityFramework/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Messages/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

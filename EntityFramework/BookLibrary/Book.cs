@@ -12,7 +12,7 @@ namespace BookLibrary
         public string Title { get; set; }
         public int YearOfPublication { get; set; }
         public Author Author { get; set; }
-
+        public Book() { }
         public override string ToString()
         {
             return $"{Title} ({YearOfPublication})";

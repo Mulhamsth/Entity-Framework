@@ -13,8 +13,8 @@ namespace Messages
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<GlobalMessages>().ToTable("GlobalMessages");
-            modelBuilder.Entity<DirectMessages>().ToTable("DirectMessages");
+            modelBuilder.Entity<GlobalMessages>().ToTable("GLOBAL_MESSAGES");
+            modelBuilder.Entity<DirectMessages>().ToTable("DIRECT_USER_MESSAGES");
             modelBuilder.Entity<DirectMessages>().HasOne(message => message.User).WithOne()
                 .HasForeignKey<DirectMessages>(message => message.UserId);
         }

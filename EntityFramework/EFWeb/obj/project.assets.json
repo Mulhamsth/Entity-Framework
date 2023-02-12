@@ -528,35 +528,6 @@
         "runtime": {
           "bin/placeholder/BookLibrary.dll": {}
         }
-      },
-      "EntityFramework/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "BookLibrary": "1.0.0",
-          "Messages": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/EntityFramework.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/EntityFramework.dll": {}
-        }
-      },
-      "Messages/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Sqlite.Core": "7.0.2"
-        },
-        "compile": {
-          "bin/placeholder/Messages.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Messages.dll": {}
-        }
       }
     }
   },
@@ -1224,22 +1195,11 @@
       "type": "project",
       "path": "../BookLibrary/BookLibrary.csproj",
       "msbuildProject": "../BookLibrary/BookLibrary.csproj"
-    },
-    "EntityFramework/1.0.0": {
-      "type": "project",
-      "path": "../EntityFramework/EntityFramework.csproj",
-      "msbuildProject": "../EntityFramework/EntityFramework.csproj"
-    },
-    "Messages/1.0.0": {
-      "type": "project",
-      "path": "../Messages/Messages.csproj",
-      "msbuildProject": "../Messages/Messages.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BookLibrary >= 1.0.0",
-      "EntityFramework >= 1.0.0"
+      "BookLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1271,9 +1231,6 @@
           "projectReferences": {
             "C:\\Users\\Mulhamsth\\github\\Entity-Framework\\EntityFramework\\BookLibrary\\BookLibrary.csproj": {
               "projectPath": "C:\\Users\\Mulhamsth\\github\\Entity-Framework\\EntityFramework\\BookLibrary\\BookLibrary.csproj"
-            },
-            "C:\\Users\\Mulhamsth\\github\\Entity-Framework\\EntityFramework\\EntityFramework\\EntityFramework.csproj": {
-              "projectPath": "C:\\Users\\Mulhamsth\\github\\Entity-Framework\\EntityFramework\\EntityFramework\\EntityFramework.csproj"
             }
           }
         }
